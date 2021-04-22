@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Received BOD....</h1>
+    <h2>to see your BOD, append your lid like this</h2>
+    <h2>http(s)://hostname<b>?id=lid://infor...</b></h2>
+    <% if(repo.length > 0 && id !='') {%>
+        <h3>Lid: <%=id%></h3>
+        <table border="1">
+        <%repo.forEach( (value, key) => {%>
+            <%if (value.lid == id || id == 'all'){%>
+                    <tr>
+                        <td style="padding:10px"><%=value.document.bod%></td>
+                        <td style="padding:10px"><%=value.document.content%></td>
+                    </tr>
+
+            <%}%>
+        <%})%>
+        </table>
+    <%} else {%>
+        <div>NO DATA</div>
+    <%}%>    
+</body>
+</html>
