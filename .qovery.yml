@@ -1,7 +1,7 @@
 ---
 application:
   name: "ims-server-api"
-  project: "demotraining"
+  project: "demo"
   organization: "QoveryCommunity"
 routers:
 - name: "main-ims-server-api"
