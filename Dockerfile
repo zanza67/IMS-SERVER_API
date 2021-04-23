@@ -1,3 +1,4 @@
+# needed for Qovary deployment
 FROM node:14-alpine as base
 
 WORKDIR /
