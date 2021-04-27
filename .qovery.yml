@@ -1,0 +1,11 @@
+---
+application:
+  name: "ims-server-api"
+  project: "imsQovery"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-ims-server-api"
+  routes:
+  - application_name: "ims-server-api"
+    paths:
+    - "/*"
